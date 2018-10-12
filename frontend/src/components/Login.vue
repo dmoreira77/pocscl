@@ -109,7 +109,7 @@ body {
 }
 
 input.login-input {
-	width: 150px;
+	width: 90%;
 	padding: 3px 3px 3px 3px;
 	border-radius: 5px;
 	display:block !important;
@@ -118,13 +118,10 @@ input.login-input {
     -webkit-box-shadow: 0 0 0;
  
     border: 1px solid rgb(169, 169, 169);
-	
-	
-	
 }
 
 button	{
-		width:150px;
+		width:90%;
 		font-size: 16.25px;
 		border-radius: 5px;
 		border: 1px solid rgba(0,0,0,0.2);
@@ -138,6 +135,60 @@ button:hover {
 		background-color: #2384d3;
 		color:#fff;
 }
-		
-/* fim de atualizações pedidas */
+
+@media screen and (min-width: 424px) and (max-width: 1000px) {
+	.centralizadora-div {
+		margin: 0 auto;
+		width: 70%;
+	}
+}		
+
+@media screen and (max-width: 424px) {
+	.centralizadora-div {
+		margin: 0 0 0 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.login-div {
+		margin-top:0;
+		width: calc(100% - 10px);
+		margin-left:0;
+		padding:30px 0 30px 10px;
+		height:100%;
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:130%;
+		box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+	}
+
+	input.login-input {
+		width: calc(100% - 20px);
+		height: 40px;
+		padding: 0 0 0 0;
+		border-radius: 5px;
+		display:block !important;
+		font-size:130%;
+
+	    -moz-box-shadow: 0 0 0;
+	    -webkit-box-shadow: 0 0 0;
+	 
+	    border: 1px solid rgb(169, 169, 169);
+	}
+
+	button	{
+		width:60%;
+		height:40px;
+		margin-left: 20%;
+		font-size: 16.25px;
+		border-radius: 5px;
+		border: 1px solid rgba(0,0,0,0.2);
+		color: #fff;
+		background-color: #053970;
+		box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+		cursor: pointer;
+	}
+
+}
+
+
 </style>
