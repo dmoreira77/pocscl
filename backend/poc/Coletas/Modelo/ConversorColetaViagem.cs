@@ -3,7 +3,7 @@ using poc.AcompanhamentoLogistica.Modelo;
 using poc.Cadastro;
 using poc.Cadastro.Modelo;
 using poc.Coletas.DTO;
-using poc.IntegracaoInterna.GestaoFrotas.Modelo;
+using poc.GestaoFrotas.Modelo;
 using poc.SolicitacoesTransporte;
 using poc.SolicitacoesTransporte.Modelo;
 using System;

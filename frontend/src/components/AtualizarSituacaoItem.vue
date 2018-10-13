@@ -23,7 +23,7 @@
 				<div :id="'itens-parada-' + index" v-show="p.mostrar_itens" class="itens-parada">
 					<div v-for="(item, ii) in p.itens" :id="'item-' + item.codigo" class="item">
 						
-						<button @click="mostrarOcultarSituacoes(index, ii)" class="bloco bloco-item">
+						<button @click="mostrarOcultarSituacoes(index, ii)" class="bloco bloco-item" :class="classeResultado(item)">
 							{{item.codigo}} - {{item.descricao}} <br/>
 							{{item.descricaoSituacao}}
 						</button>
@@ -34,7 +34,7 @@
 								<span style="vertical-align: middle;height:100%;display:inline-block;">{{sit.descricao}}</span>
 							</div>
 
-							<textarea style="width:100%; height:200px; margin-top: 3%;  display:inline-block; font-size: 200%; border:1px solid #000;" v-model="item.observacao" :disabled="atualizandoItem">
+							<textarea style="width:95%; height:70px; margin-top: 3%;  display:inline-block; border:1px solid #000;" v-model="item.observacao" :disabled="atualizandoItem">
 							</textarea>
 
 							<button @click="atualizarSituacao(item)" class="botao-confirmar" :disabled="atualizandoItem">
@@ -177,15 +177,15 @@
 	
 	*{
 		font-family: Verdana,sans-serif;
-		font-size: 135%;
+		font-size: 100%;
 	}
 
 	#viagem{
 		font-weight:bold;
 		background-color:#eee;
 		text-align:left;
-		font-size:100%;
-		padding-top:50px;
+		font-size:80%;
+		padding-top:20px;
 		padding-left:20px;
 		border-bottom:1px solid #555;
 	}
@@ -206,12 +206,12 @@
 	}
 
 	.bloco-parada{
-		margin-top:10px;
+		margin-top:5px;
 		background-color: #007acc;
 		color: #ffffff;		
 		border-color: #007acc;
-		padding-top:50px;
-		padding-bottom:50px;
+		padding-top:20px;
+		padding-bottom:20px;
 	}
 
 	span.bloco-parada-local{
@@ -222,20 +222,20 @@
 
 	.itens-parada{
 		width: 100%;
-		padding-bottom:15px;
+		padding-bottom:5px;
 	}
 
 	.item{
 		width: 100%;
 		border-radius: 1rem;		
-		margin-top:10px;
+		margin-top:5px;
 	}
 
 	.bloco-item{
-		margin-top:10px;
-		font-size: 50%;
-		padding-top:35px;
-		padding-bottom:35px;
+		margin-top:5px;
+		font-size: 80%;
+		padding-top:10px;
+		padding-bottom:10px;
 		text-align: left;
 		background-color: #ccffff;
 		color: #000000;		
@@ -246,7 +246,7 @@
 
 	.bloco-item-sucesso{
 		border-color: #006622 !important;
-		border-width: 5px;
+		border-width: 3px;
 		background-color: #99ffbb !important;
 		color: #000;
 	}
@@ -266,7 +266,7 @@
 	}
 
 	.situacoes-item{
-		font-size:30%;
+		font-size:80%;
 		font-weight: bold;
 		text-align: left;
 		padding-left: 15px;
@@ -279,12 +279,12 @@
 		vertical-align:middle;
 		margin-left: auto;
 		margin-right: auto;
-		padding-bottom:20px;
+		padding-bottom:7px;
 	}
 
 	.radio-situacao{
-		width: 40px;
-		height: 40px;
+		width: 15px;
+		height: 15px;
 		vertical-align:middle;
 		fill: #fff;
 		border:1px solid #000;
@@ -292,8 +292,8 @@
 
 	.botao-confirmar{
 		width:50%;
-		height: 100px;
-		margin-left:45%;
+		height: 50px;
+		margin-left:25%;
 		/*margin-right:5%;*/
 		margin-top: 25px;
 		margin-bottom: 5%;
@@ -302,7 +302,7 @@
 		border: 2px solid transparent;
 		border-color:#006600;
 		font-weight: bold;
-		font-size:150%;
+		font-size:120%;
 		cursor:pointer;
 		padding-top:8px;
 		padding-bottom:8px;

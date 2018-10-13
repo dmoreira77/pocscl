@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace poc.Cadastro.Modelo
 {
-    [Table("situacao_item")]
     public class SituacaoItem
     {
-        [Key]
         public int Codigo { get; set; }
         public string Descricao { get; set; }
         public string TipoOperacao { get; set; }

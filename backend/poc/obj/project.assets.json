@@ -12566,11 +12566,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel Alves Moreira\\source\\repos\\poc\\poc\\poc.csproj",
+      "projectUniqueName": "C:\\pocscl\\backend\\poc\\poc.csproj",
       "projectName": "poc",
-      "projectPath": "C:\\Users\\Daniel Alves Moreira\\source\\repos\\poc\\poc\\poc.csproj",
+      "projectPath": "C:\\pocscl\\backend\\poc\\poc.csproj",
       "packagesPath": "C:\\Users\\Daniel Alves Moreira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel Alves Moreira\\source\\repos\\poc\\poc\\obj\\",
+      "outputPath": "C:\\pocscl\\backend\\poc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace poc.IntegracaoInterna.GestaoFrotas.Modelo
+namespace poc.GestaoFrotas.Modelo
 {
     public class Motorista
     {

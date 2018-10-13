@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace poc.IntegracaoInterna.GestaoFrotas.DTO
+namespace poc.GestaoFrotas.DTO
 {
     public class ParametrosDisponibilidadeDTO
     {

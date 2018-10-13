@@ -15,17 +15,5 @@ namespace poc.Cadastro.DTO
         public int Codigo { get => codigo; set => codigo = value; }
         public string Nome { get => nome; set => nome = value; }
         public string Endereco { get => endereco; set => endereco = value; }
-
-        public static CentroDistribuicaoDTO criar(CentroDistribuicao centro)
-        {
-            CentroDistribuicaoDTO dto = new CentroDistribuicaoDTO()
-            {
-                Codigo = centro.Codigo,
-                Nome = centro.Nome,
-                Endereco = centro.Endereco
-            };
-
-            return dto;
-        }
     }
 }

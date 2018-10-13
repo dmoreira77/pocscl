@@ -17,18 +17,5 @@ namespace poc.Cadastro.DTO
         public int Codigo { get => codigo; set => codigo = value; }
         public string TipoOperacao { get => tipoOperacao; set => tipoOperacao = value; }
         public bool ConsideradoSucesso { get => consideradoSucesso; set => consideradoSucesso = value; }
-
-        public static SituacaoItemDTO criar(SituacaoItem situacao)
-        {
-            SituacaoItemDTO dto = new SituacaoItemDTO()
-            {
-                Descricao = situacao.Descricao,
-                Codigo = situacao.Codigo,
-                TipoOperacao = situacao.TipoOperacao,
-                ConsideradoSucesso = situacao.ConsideradoSucesso
-            };
-
-            return dto;
-        }
     }
 }

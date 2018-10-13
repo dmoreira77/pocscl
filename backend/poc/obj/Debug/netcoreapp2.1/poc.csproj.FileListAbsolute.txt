@@ -13,3 +13,18 @@ C:\Users\Daniel Alves Moreira\source\repos\poc\poc\bin\Debug\netcoreapp2.1\poc.p
 C:\Users\Daniel Alves Moreira\source\repos\poc\poc\obj\Debug\netcoreapp2.1\poc.dll
 C:\Users\Daniel Alves Moreira\source\repos\poc\poc\obj\Debug\netcoreapp2.1\poc.pdb
 C:\Users\Daniel Alves Moreira\source\repos\poc\poc\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\pocscl\backend\poc\bin\Debug\netcoreapp2.1\poc.deps.json
+C:\pocscl\backend\poc\bin\Debug\netcoreapp2.1\poc.runtimeconfig.json
+C:\pocscl\backend\poc\bin\Debug\netcoreapp2.1\poc.runtimeconfig.dev.json
+C:\pocscl\backend\poc\bin\Debug\netcoreapp2.1\poc.dll
+C:\pocscl\backend\poc\bin\Debug\netcoreapp2.1\poc.pdb
+C:\pocscl\backend\poc\obj\Debug\netcoreapp2.1\poc.csprojAssemblyReference.cache
+C:\pocscl\backend\poc\obj\Debug\netcoreapp2.1\poc.csproj.CoreCompileInputs.cache
+C:\pocscl\backend\poc\obj\Debug\netcoreapp2.1\poc.RazorAssemblyInfo.cache
+C:\pocscl\backend\poc\obj\Debug\netcoreapp2.1\poc.RazorAssemblyInfo.cs
+C:\pocscl\backend\poc\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\pocscl\backend\poc\obj\Debug\netcoreapp2.1\poc.AssemblyInfoInputs.cache
+C:\pocscl\backend\poc\obj\Debug\netcoreapp2.1\poc.AssemblyInfo.cs
+C:\pocscl\backend\poc\obj\Debug\netcoreapp2.1\poc.RazorTargetAssemblyInfo.cache
+C:\pocscl\backend\poc\obj\Debug\netcoreapp2.1\poc.dll
+C:\pocscl\backend\poc\obj\Debug\netcoreapp2.1\poc.pdb

@@ -50,103 +50,8 @@ namespace poc.AcompanhamentoLogistica
             }
             else
             {
-                //Substituir por retorno que informe que o motorista não é quem diz ser
                 return null;
             }
-            
-            
-            /*
-            ViagemDTO v = new ViagemDTO()
-            {
-                Codigo = 2356,
-                Placa = "LTX4011",
-                CpfMotorista = "11122233344",
-                NomeMotorista = "Diogo Andrade Faria",
-                TipoViagem = "Coleta",
-                Paradas = new ParadaDTO[] {
-                    new ParadaDTO() {
-                        Endereco = "Rua Marquês de Valença, 55 - Tijuca",
-                        Municipio = "Rio de Janeiro",
-                        Uf = "RJ",
-                        Cep = "20000-000",
-                        Itens = new ItemTransporteDTO[] {
-                            new ItemTransporteDTO(){
-                                TipoOperacao = "frete",
-
-                                Codigo = 152,
-                                Descricao = "Livro A Iliada",
-                                Unidade = "Un",
-                                Quantidade = 3,
-                               
-                                Cuidados = "-",
-                                Cliente = "Saraiva",
-                                EnderecoColeta = "Rua Marquês de Valença, 55 - Tijuca",
-                                MunicipioColeta = "Rio de Janeiro",
-                                UfColeta = "RJ",
-                                CepColeta = "20000-000",
-                                
-                                JanelaColeta = "11h às 13h",
-                                
-                                CodigoSituacao = 29,
-                                DescricaoSituacao = "Expedido"
-                            }
-                        }
-                    },
-                    new ParadaDTO() {
-                        Endereco = "Rua Erasmo Braga, 107 - Centro",
-                        Municipio = "Rio de Janeiro",
-                        Uf = "RJ",
-                        Cep = "20000-000",
-                        Itens = new ItemTransporteDTO[]{
-                            new ItemTransporteDTO(){
-                                TipoOperacao = "coleta",
-
-                                Codigo = 153,
-                                Descricao = "Sofá Americano Retrátil",
-                                Unidade = "Un",
-                                Quantidade = 1,
-                               
-                                Cuidados = "-",
-                                Cliente = "TokStok",
-                                EnderecoColeta = "Rua Erasmo Braga, 107 - Centro",
-                                MunicipioColeta = "Rio de Janeiro",
-                                UfColeta = "RJ",
-                                CepColeta = "20000-000",
-                               
-                                JanelaColeta = "11h às 13h",
-                               
-                                CodigoSituacao = 19,
-                                DescricaoSituacao = "Coleta em andamento"
-
-                            },
-                            new ItemTransporteDTO(){
-                                TipoOperacao = "devolucao",
-
-                                Codigo = 154,
-                                Descricao = "Poltrona King",
-                                Unidade = "Un",
-                                Quantidade = 1,
-                                
-                                Cuidados = "-",
-                                Cliente = "TokStok",
-                                EnderecoColeta = "Rua Erasmo Braga, 107 - Centro",
-                                MunicipioColeta = "Rio de Janeiro",
-                                UfColeta = "RJ",
-                                CepColeta = "20000-000",
-                               
-                                JanelaColeta = "11h às 13h",
-                                
-
-                                CodigoSituacao = 39,
-                                DescricaoSituacao = "Devolução em andamento"
-                            }
-                        }
-                    }
-                }
-            };
-
-            return v;
-            */
         }
 
 
@@ -158,7 +63,6 @@ namespace poc.AcompanhamentoLogistica
             int codigoSituacaoNova = (int) corpo.situacao.codigo;
             String observacao = (String) corpo.observacao;
             
-            //Chamar método de atualização do DAOItemTransporte e do DAOHistoricoItem
             if((new DAOItemTransporte()).atualizarSituacao(id, codigoSituacaoNova, observacao))
             {
                 return new {
@@ -185,7 +89,6 @@ namespace poc.AcompanhamentoLogistica
         [HttpGet("api/acompanhamento-logistica/itens/{id}/situacao-atual")]
         public SituacaoItem getSituacao(int id)
         {
-            //Mock - Resgatando o item a que se refere
             ItemTransporte item = new ItemTransporte() { Codigo = id, SituacaoAtual = new SituacaoItem() { Codigo = 0 } };
 
             SituacaoItem situacaoAtual = item.SituacaoAtual;

@@ -1,5 +1,5 @@
-﻿using poc.IntegracaoInterna.GestaoFrotas;
-using poc.IntegracaoInterna.GestaoFrotas.Modelo;
+﻿using poc.GestaoFrotas.Modelo;
+using poc.IntegracaoInterna.GestaoFrotas;
 using System;
 using System.Collections.Generic;
 using System.Linq;

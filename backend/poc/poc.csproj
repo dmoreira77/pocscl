@@ -7,13 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Acesso\ControleAcesso.cs" />
-    <Compile Remove="Acesso\UsuarioAutenticado.cs" />
-    <Compile Remove="AcompanhamentoLogistica\AtualizacaoSituacaoDTO.cs" />
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="wwwroot\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Compile Remove="Acesso\ControleAcesso.cs" />
+    <Compile Remove="Acesso\UsuarioAutenticado.cs" />
+    <Compile Remove="AcompanhamentoLogistica\AtualizacaoSituacaoDTO.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,8 +1,8 @@
 ﻿using Dapper;
 using Dapper.Mapper;
 using MySql.Data.MySqlClient;
-using poc.IntegracaoInterna.GestaoFrotas.DTO;
-using poc.IntegracaoInterna.GestaoFrotas.Modelo;
+using poc.GestaoFrotas.DTO;
+using poc.GestaoFrotas.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -105,7 +105,7 @@ namespace poc.IntegracaoInterna.GestaoFrotas
 
         public object atualizarDisponibilidade(String placa, DateTime dataHoraInicio, DateTime dataHoraFimPrevisto)
         {
-            //código que representa o encaminhamento de uma requisição ao Sistema de Gestão de Frotas e o retorno de uma resposta
+            //Aqui viria o código responsável pelo encaminhamento de uma requisição ao Sistema de Gestão de Frotas e o retorno de uma resposta
 
             if(true)
             {
