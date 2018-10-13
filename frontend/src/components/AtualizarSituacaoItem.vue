@@ -21,9 +21,9 @@
 				</button>
 				
 				<div :id="'itens-parada-' + index" v-show="p.mostrar_itens" class="itens-parada">
-					<div v-for="(item, ii) in p.itens" :id="'item-' + item.codigo" class="item" :class="'item-tipo-' + item.tipoOperacao.toLowerCase()">
+					<div v-for="(item, ii) in p.itens" :id="'item-' + item.codigo" class="item">
 						
-						<button @click="mostrarOcultarSituacoes(index, ii)" class="bloco bloco-item" :class="'bloco-item-tipo-' + item.tipoOperacao.toLowerCase() + ' ' + classeResultado(item)">
+						<button @click="mostrarOcultarSituacoes(index, ii)" class="bloco bloco-item">
 							{{item.codigo}} - {{item.descricao}} <br/>
 							{{item.descricaoSituacao}}
 						</button>
@@ -231,44 +231,17 @@
 		margin-top:10px;
 	}
 
-	.item-tipo-coleta{
-		/*background-color: #cceeff;*/
-	}
-
-	.item-tipo-frete{
-		background-color: #e6ffee;
-	}
-
-	.item-tipo-devolucao{
-		background-color: #ffe6f7;
-	}
-
 	.bloco-item{
 		margin-top:10px;
 		font-size: 50%;
 		padding-top:35px;
 		padding-bottom:35px;
 		text-align: left;
-	}
-
-	.bloco-item-tipo-coleta{
 		background-color: #ccffff;
 		color: #000000;		
 		border-color: #007acc;
 		border-width: 2px;
 		padding-left:25px;
-	}
-
-	.bloco-item-tipo-frete{
-		background-color: #00802b;
-		color: #ffffff;		
-		border-color: #00802b;
-	}
-
-	.bloco-item-tipo-devolucao{
-		background-color: #e83e8c;
-		color: #ffffff;		
-		border-color: #e83e8c;
 	}
 
 	.bloco-item-sucesso{

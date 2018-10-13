@@ -33,7 +33,7 @@ const routes = [{
     {
         path: '/agendar-coleta',
         name: 'agendar-coleta',
-        component: require('./components/DefinirColeta.vue').default,
+        component: require('./components/AgendarColeta.vue').default,
         meta: {auth: 'Supervisor de Distribuição'}
     },
     {

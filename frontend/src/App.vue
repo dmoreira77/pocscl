@@ -222,6 +222,4 @@
     text-align: left;
     font-weight: 400;
   }
-    
-/* fim de atualizações pedidas */
 </style>

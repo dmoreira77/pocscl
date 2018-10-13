@@ -252,7 +252,7 @@
 	import axios from 'axios';
 
 	export default{
-		name: "definir-coleta",
+		name: "agendar-coleta",
 		data(){
 			return {
 				itensPendentes: [],
@@ -433,7 +433,6 @@
 				}
 			},
 			confirmarRoteiro(){
-				//Mock - Chamada à API para calcular o Roteiro e distância correspondente
 				this.mensagemCarregamento = "Calculando roteiro";
 				axios.request({
 				  method: 'post',
